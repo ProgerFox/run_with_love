@@ -1,3 +1,5 @@
+import { partnersData } from "../data/partners.js";
+
 const PartnerCard = ({ name }) => {
   return (
     <div className="bg-white rounded-2xl p-8 flex items-center justify-center border border-gray-200 hover:shadow-md transition-shadow">
@@ -10,17 +12,6 @@ const PartnerCard = ({ name }) => {
 };
 
 export const Partners = () => {
-  const data = [
-    { name: "Партнёр 1" },
-    { name: "Партнёр 2" },
-    { name: "Партнёр 3" },
-    { name: "Партнёр 4" },
-    { name: "Партнёр 5" },
-    { name: "Партнёр 6" },
-    { name: "Партнёр 7" },
-    { name: "Партнёр 8" },
-  ];
-
   return (
     <section id="partners" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,8 +21,8 @@ export const Partners = () => {
           ценности сообщества, здоровья и социального влияния.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          {data.map((item, index) => (
-            <PartnerCard key={index} {...item} />
+          {partnersData.map((item) => (
+            <PartnerCard key={item.name} {...item} />
           ))}
         </div>
         <div className="text-center">

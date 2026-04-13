@@ -1,3 +1,5 @@
+import { newsData } from "../data/news.js";
+
 const NewsCard = ({ src, alt, tag, header, date }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
@@ -34,38 +36,13 @@ const NewsCard = ({ src, alt, tag, header, date }) => {
 };
 
 export const News = () => {
-  const data = [
-    {
-      src: "https://images.unsplash.com/photo-1774557937760-e07a8e01240c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;q=80&amp;w=800",
-      alt: "Весенний забег собрал 2,5 млн рублей на детское здравоохранение",
-      tag: "Влияние",
-      header: "Весенний забег собрал 2,5 млн рублей на детское здравоохранение",
-      date: "28 марта 2026",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1766066015219-b10a97dbb781?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;q=80&amp;w=800",
-      alt: "Запущена новая программа тренировок для новичков",
-      tag: "Сообщество",
-      header: "Запущена новая программа тренировок для новичков",
-      date: "25 марта 2026",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1769867627584-4629a704a517?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;q=80&amp;w=800",
-      alt: "Знакомьтесь с нашим новым партнёром: Инициатива «Зелёная планета»",
-      tag: "Благотворительность",
-      header:
-        "Знакомьтесь с нашим новым партнёром: Инициатива «Зелёная планета»",
-      date: "20 марта 2026",
-    },
-  ];
-
   return (
     <section id="news" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl text-center mb-16">Новости сообщества</h2>
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {data.map((item, index) => (
-            <NewsCard key={index} {...item} />
+          {newsData.map((item) => (
+            <NewsCard key={item.header} {...item} />
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
