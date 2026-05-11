@@ -1,4 +1,4 @@
-import { charityData } from "../data/charity.js";
+import { charityData } from "../../data/charity.js";
 
 const icons = {
   heart: (
@@ -49,7 +49,15 @@ const icons = {
   ),
 };
 
-const CharityCard = ({ icon_bg, icon_name, icon_color, partner, description, type_color, type }) => {
+const CharityCard = ({
+  icon_bg,
+  icon_name,
+  icon_color,
+  partner,
+  description,
+  type_color,
+  type,
+}) => {
   return (
     <div className="bg-gray-50 p-8 rounded-2xl">
       <div className={`${icon_bg} ${icon_color}`}>{icons[icon_name]}</div>

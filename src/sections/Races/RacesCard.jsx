@@ -1,4 +1,4 @@
-export const RacingCard = (data) => {
+export const RacesCard = (data) => {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
       <div className="h-48 overflow-hidden">

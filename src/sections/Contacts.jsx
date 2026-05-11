@@ -25,31 +25,25 @@ export const Contacts = () => {
             <div>
               <h4 className="mb-4">Контактная информация</h4>
               <div className="space-y-2 text-red-100">
-                <p>Email: hello@runwithlove.org</p>
-                <p>Телефон: +7 (495) 123-45-67</p>
-                <p>Адрес: Москва, Россия</p>
+                <p>Почта: 89164192119@mail.ru</p>
               </div>
             </div>
             <div>
               <h4 className="mb-4">Мы в соцсетях</h4>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://vk.ru/runwithlove"
+                  target="_blank"
                   className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                 >
                   VK
                 </a>
                 <a
-                  href="#"
+                  href="https://t.me/run_with_love"
+                  target="_blank"
                   className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                 >
                   TG
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                >
-                  IG
                 </a>
               </div>
             </div>

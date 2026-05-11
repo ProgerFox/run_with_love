@@ -1,4 +1,6 @@
-export const Header = () => {
+import { navItems } from "../data/navigation";
+
+export const Header = ({ scrollTo }) => {
   return (
     <header className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,44 +23,20 @@ export const Header = () => {
             <span className="text-xl tracking-tight">Run With Love</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#races"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Забеги
-            </a>
-            <a
-              href="#charity"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Кому мы помогаем
-            </a>
-            <a
-              href="#gallery"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Фото / Видео
-            </a>
-            <a
-              href="#news"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Новости
-            </a>
-            <a
-              href="#partners"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Партнёры
-            </a>
-            <a
-              href="#contacts"
-              className="text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              Контакты
-            </a>
+            {navItems.map((item, index) => (
+              <a
+                href={item.href}
+                className="text-gray-700 hover:text-gray-900 transition-colors"
+                key={index}
+              >
+                {item.label}
+              </a>
+            ))}
           </nav>
-          <button className="hidden md:block px-6 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors">
+          <button
+            className="hidden md:block px-6 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors"
+            onClick={() => scrollTo("races")}
+          >
             Выбрать забег
           </button>
           <button className="md:hidden p-2">

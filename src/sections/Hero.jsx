@@ -1,4 +1,4 @@
-export const Hero = () => {
+export const Hero = ({ scrollTo }) => {
   return (
     <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -21,7 +21,10 @@ export const Hero = () => {
           благотворительные организации.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors text-lg">
+          <button
+            className="px-8 py-4 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors text-lg"
+            onClick={() => scrollTo("races")}
+          >
             Выбрать забег
           </button>
           <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white rounded-full hover:bg-white/20 transition-colors text-lg">

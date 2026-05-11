@@ -1,4 +1,4 @@
-import { featuresData } from "../data/features.js";
+import { featuresData } from "../../data/features.js";
 
 const icons = {
   heart: (
