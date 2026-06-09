@@ -1,4 +1,6 @@
-export const featuresData = [
+import type { Feature } from "../types";
+
+export const featuresData: Feature[] = [
   {
     id: "atmosphere",
     icon_name: "heart",

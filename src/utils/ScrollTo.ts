@@ -1,4 +1,4 @@
-export const scrollTo = (id) => {
+export const scrollTo = (id: string) => {
   const element = document.getElementById(id);
   if (!element) {
     return;

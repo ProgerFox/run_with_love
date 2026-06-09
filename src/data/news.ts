@@ -1,4 +1,6 @@
-export const newsData = [
+import type { NewsItem } from "../types";
+
+export const newsData: NewsItem[] = [
   {
     src: "https://images.unsplash.com/photo-1774557937760-e07a8e01240c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     alt: "Весенний забег собрал 2,5 млн рублей на детское здравоохранение",

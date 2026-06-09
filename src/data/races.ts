@@ -1,4 +1,6 @@
-export const racesData = [
+import type { Race } from "../types";
+
+export const racesData: Race[] = [
   {
     img_src:
       "https://images.unsplash.com/photo-1685286589029-f9dc127c86dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",

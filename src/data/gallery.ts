@@ -1,4 +1,6 @@
-export const galleryData = [
+import type { GalleryItem } from "../types";
+
+export const galleryData: GalleryItem[] = [
   {
     src: "https://images.unsplash.com/photo-1774050249612-e20ebb602d72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
     alt: "Момент забега 1",

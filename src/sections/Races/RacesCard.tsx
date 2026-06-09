@@ -1,4 +1,6 @@
-export const RacesCard = (data) => {
+import type { Race } from "../../types";
+
+export const RacesCard = (data: Race) => {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
       <div className="h-48 overflow-hidden">

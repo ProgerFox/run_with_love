@@ -1,5 +1,5 @@
-import { newsData } from "../../data/news.js";
-import { NewsCard } from "./NewsCard.jsx";
+import { newsData } from "../../data/news";
+import { NewsCard } from "./NewsCard";
 
 export const News = () => {
   // TODO: автоматически парсить новости из vk

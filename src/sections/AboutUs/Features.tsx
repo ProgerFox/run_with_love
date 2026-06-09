@@ -1,6 +1,7 @@
-import { featuresData } from "../../data/features.js";
+import { featuresData } from "../../data/features";
+import type { Feature, FeatureIconName } from "../../types";
 
-const icons = {
+const icons: Record<FeatureIconName, React.ReactElement> = {
   heart: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +57,7 @@ const icons = {
   ),
 };
 
-const FeatureCard = ({ icon_name, title, description }) => (
+const FeatureCard = ({ icon_name, title, description }: Feature) => (
   <div className="bg-white p-8 rounded-2xl border border-gray-200">
     {icons[icon_name]}
     <h3 className="text-xl mb-3">{title}</h3>

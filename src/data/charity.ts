@@ -1,4 +1,6 @@
-export const charityData = [
+import type { CharityPartner } from "../types";
+
+export const charityData: CharityPartner[] = [
   {
     icon_name: "heart",
     icon_color: "text-red-500",

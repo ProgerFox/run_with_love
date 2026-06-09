@@ -1,5 +1,5 @@
-import { RacesCard } from "./RacesCard.jsx";
-import { racesData } from "../../data/races.js";
+import { RacesCard } from "./RacesCard";
+import { racesData } from "../../data/races";
 
 export const Races = () => {
   return (

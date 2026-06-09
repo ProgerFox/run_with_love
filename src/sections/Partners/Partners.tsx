@@ -1,5 +1,5 @@
-import { partnersData } from "../../data/partners.js";
-import { PartnerCard } from "./PartnerCard.jsx";
+import { partnersData } from "../../data/partners";
+import { PartnerCard } from "./PartnerCard";
 
 export const Partners = () => {
   return (

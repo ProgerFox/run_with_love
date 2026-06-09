@@ -1,4 +1,6 @@
-export const partnersData = [
+import type { Partner } from "../types";
+
+export const partnersData: Partner[] = [
   { name: "Партнёр 1" },
   { name: "Партнёр 2" },
   { name: "Партнёр 3" },

@@ -1,4 +1,4 @@
-import { galleryData } from "../data/gallery.js";
+import { galleryData } from "../data/gallery";
 
 export const Gallery = () => {
   return (

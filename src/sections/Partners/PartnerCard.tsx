@@ -1,4 +1,6 @@
-export const PartnerCard = ({ name }) => {
+import type { Partner } from "../../types";
+
+export const PartnerCard = ({ name }: Partner) => {
   return (
     <div className="bg-white rounded-2xl p-8 flex items-center justify-center border border-gray-200 hover:shadow-md transition-shadow">
       <div className="text-gray-400 text-center">

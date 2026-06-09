@@ -1,6 +1,7 @@
-import { charityData } from "../../data/charity.js";
+import { charityData } from "../../data/charity";
+import type { CharityIconName, CharityPartner } from "../../types";
 
-const icons = {
+const icons: Record<CharityIconName, React.ReactElement> = {
   heart: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,7 @@ const CharityCard = ({
   description,
   type_color,
   type,
-}) => {
+}: CharityPartner) => {
   return (
     <div className="bg-gray-50 p-8 rounded-2xl">
       <div className={`${icon_bg} ${icon_color}`}>{icons[icon_name]}</div>
